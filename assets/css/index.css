@@ -1,0 +1,49 @@
+/* TODO: clean up */
+
+#dropZone {
+    padding: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#dropZone.dragover {
+    background-color: var(--bs-dark-bg-subtle) !important;
+    border-color: var(--bs-secondary-border-subtle) !important;
+}
+
+#labelDragover {
+    display: none;
+}
+
+#dropZone.dragover #labelNormal {
+    display: none;
+}
+
+#dropZone.dragover #labelDragover {
+    display: block;
+}
+
+.container-sm {
+    max-width: 800px;
+}
+
+@media (hover: hover) {
+    .btn-white:hover {
+        background-color: #f0f0f0 !important;
+        border-color: transparent !important;
+    }
+}
+
+.btn-white:active {
+    background-color: #f0f0f0 !important;
+}
+
+.btn-white {
+    border-color: transparent !important;
+}
+
+.file-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
