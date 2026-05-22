@@ -7,8 +7,8 @@ const fileList = document.getElementById("fileList");
 const allowedExt = ["jpg", "jpeg", "heic"];
 const replaceTags = ["UserComment", "ImageDescription"];
 
-const replaceText = "pieter.lol";
-const zipName = "pieter.lol";
+const replaceText = ""; // this replaces value of the indicator tags (padded/truncated to the original length)
+const zipName = "spatial";
 
 const fileMap = new Map();
 
@@ -360,4 +360,4 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 // iOS fix for css :active
-document.addEventListener('touchstart', () => { }, true);
+document.addEventListener("touchstart", () => { }, true);
